@@ -30,6 +30,7 @@ export const s = StyleSheet.create({
   texts: {
     flex: 1,
     paddingLeft: 15,
+    backgroundColor: 'red',
   },
 
   header: {
