@@ -9,6 +9,8 @@ export default function App() {
           style={{ flex: 1, justifyContent: 'center', padding: 20 }}
         >
           <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
         </SafeAreaView>
       </SafeAreaProvider>
     </>

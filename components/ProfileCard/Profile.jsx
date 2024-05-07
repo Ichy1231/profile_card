@@ -17,18 +17,18 @@ export function ProfileCard() {
           <View>
             <Text>Hi I am IC</Text>
           </View>
-          <View style={s.social}>
-            <TouchableOpacity>
-              <FontAwesome name='twitter' size={24} color='lightblue' />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <FontAwesome name='github' size={24} color='black' />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <FontAwesome name='facebook-square' size={24} color='blue' />
-            </TouchableOpacity>
-          </View>
         </View>
+      </View>
+      <View style={s.social}>
+        <TouchableOpacity style={s.socbtn}>
+          <FontAwesome name='twitter' size={24} color='lightblue' />
+        </TouchableOpacity>
+        <TouchableOpacity style={s.socbtn}>
+          <FontAwesome name='github' size={24} color='black' />
+        </TouchableOpacity>
+        <TouchableOpacity style={s.socbtn}>
+          <FontAwesome name='facebook-square' size={24} color='blue' />
+        </TouchableOpacity>
       </View>
     </View>
   )

@@ -29,15 +29,21 @@ export const s = StyleSheet.create({
 
   texts: {
     flex: 1,
-    paddingLeft: 15,
-    backgroundColor: 'red',
+    paddingLeft: 10,
   },
 
   header: {
     flexDirection: 'row',
   },
   social: {
-    flexDirection: 'row',
+    padding: 10,
     justifyContent: 'space-evenly',
+    flexDirection: 'row',
+  },
+
+  socbtn: {
+    borderRadius: 50,
+    padding: 10,
+    backgroundColor: '#eee',
   },
 })
