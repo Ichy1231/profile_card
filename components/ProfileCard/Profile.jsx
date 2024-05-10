@@ -1,8 +1,8 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { s } from './ProfileCard.style'
-import FontAwesome from '@expo/vector-icons/FontAwesome'
+import { AntDesign } from '@expo/vector-icons'
 
-export function ProfileCard() {
+export function ProfileCard(props) {
   return (
     <View style={s.container}>
       <View style={s.header}>
@@ -13,22 +13,23 @@ export function ProfileCard() {
           />
         </View>
         <View style={s.texts}>
-          <Text style={s.name}>Ic TheDev</Text>
+          <Text style={s.name}>
+            {props.firstName} {props.LastName}
+          </Text>
           <View>
-            <Text>Hi I am IC</Text>
+            <Text>
+              Hi I am IC, I am {props.age} years old, let's get in touch, talk
+              to you soon
+            </Text>
           </View>
         </View>
       </View>
       <View style={s.social}>
         <TouchableOpacity style={s.socbtn}>
-          <FontAwesome name='twitter' size={24} color='lightblue' />
+          <AntDesign name='stepforward' size={24} color='black' />
         </TouchableOpacity>
-        <TouchableOpacity style={s.socbtn}>
-          <FontAwesome name='github' size={24} color='black' />
-        </TouchableOpacity>
-        <TouchableOpacity style={s.socbtn}>
-          <FontAwesome name='facebook-square' size={24} color='blue' />
-        </TouchableOpacity>
+        <TouchableOpacity style={s.socbtn}></TouchableOpacity>
+        <TouchableOpacity style={s.socbtn}></TouchableOpacity>
       </View>
     </View>
   )
